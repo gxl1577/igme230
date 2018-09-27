@@ -24,3 +24,32 @@ p {
     font-size: 10px; /* old style 10px font size */
     line-height: 1.8; /* make sure space btw lines is big enough */
 }
+
+li {
+    list-style-type: none; /* kill dots */
+    padding-top:20px;
+}
+
+a {
+    font-family: verdana; /* make it same as paragraph font */
+    font-size: 11px; /* make it a little bigger than p font */
+}
+
+/* default */
+a:link {
+    text-decoration: none; /* kill underline */
+    color: saddlebrown;
+}
+
+a:visited {
+    text-decoration: none;
+    color: orange;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* click on */
+a:active {
+    text-decoration: underline;
