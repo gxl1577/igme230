@@ -1,0 +1,26 @@
+*{box-sizing:border-box;}
+
+/* Minimalistic style */
+
+body{
+    background-color: beige; /* Set background of the page to beige */
+}
+
+section{
+    max-width: 360px; /* width maxed out at 360px when browser frame expand beyond that size */
+    background-color: wheat; /* Set background of the section to wheat */
+    padding: 40px; /* Set inner border to 40px */
+    margin: auto; /* center the section */
+    }
+
+img.gan{
+    border: 20px solid #eee; /* Add full opacity 20px white grey frame around photo */
+    min-width: 100%; /* let photo expand beyond the min width */
+    
+} 
+
+p {
+    font-family: verdana; /* make it different from h1 font */
+    font-size: 10px; /* old style 10px font size */
+    line-height: 1.8; /* make sure space btw lines is big enough */
+}
