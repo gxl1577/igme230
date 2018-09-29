@@ -6,28 +6,47 @@ body{
     background-color: beige; /* Set background of the page to beige */
 }
 
-section{
-    max-width: 360px; /* width maxed out at 360px when browser frame expand beyond that size */
+div, article{
+    max-width: 720px; /* width maxed out at 360px when browser frame expand beyond that size */
     background-color: wheat; /* Set background of the section to wheat */
-    padding: 40px; /* Set inner border to 40px */
-    margin: auto; /* center the section */
+    padding: 20px; /* Set inner border to 40px */
+     /* center the section */
+    float:left;
+    }
+
+article{
+
+    float:none;
+    margin:auto;
+    overflow:auto;
     }
 
 img.gan{
-    border: 20px solid #eee; /* Add full opacity 20px white grey frame around photo */
-    min-width: 100%; /* let photo expand beyond the min width */
+    border: 10px solid #eee; /* Add full opacity 20px white grey frame around photo */
+    max-width: 100%; /* let photo expand beyond the min width */
     
 } 
 
-p {
-    font-family: verdana; /* make it different from h1 font */
-    font-size: 10px; /* old style 10px font size */
-    line-height: 1.8; /* make sure space btw lines is big enough */
+h1{
+    margin:10px;
 }
+
+h4{
+    margin:10px;
+}
+
+#div2{
+
+}
+
+
 
 li {
     list-style-type: none; /* kill dots */
     padding-top:20px;
+    padding-left:0px;
+    margin-left:0px;
+
 }
 
 a {
@@ -53,3 +72,4 @@ a:hover {
 /* click on */
 a:active {
     text-decoration: underline;
+}
