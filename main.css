@@ -15,7 +15,6 @@ div, article{
     }
 
 article{
-
     float:none;
     margin:auto;
     overflow:auto;
@@ -32,7 +31,8 @@ h1{
 }
 
 h4{
-    margin:10px;
+    margin-top:10px;
+    margin-bottom:10px;
 }
 
 #div2{
@@ -41,12 +41,17 @@ h4{
 
 
 
-li {
+ul, li {
     list-style-type: none; /* kill dots */
-    padding-top:20px;
+    padding-top:5px;
     padding-left:0px;
     margin-left:0px;
 
+}
+
+ul{
+    margin-top:0;
+    padding-top:0;
 }
 
 a {
