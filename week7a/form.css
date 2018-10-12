@@ -1,0 +1,73 @@
+form {
+    /* Just to center the form on the page */
+    margin: 0 auto;
+    width: 400px;
+    /* To see the outline of the form */
+    padding: 1em;
+    border-radius: 1em;
+    font-family: 'Titan One', cursive;
+    box-shadow: 10px 10px 100px #ddd;
+}
+
+form div + div {
+    margin-top: 1em;
+}
+
+label {
+    /* To make sure that all labels have the same size and are properly aligned */
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+    margin-right: 2em;
+}
+
+input,
+textarea {
+    /* To make sure that all text fields have the same font settings
+     By default, textareas have a monospace font */
+    font: 1em sans-serif;
+
+    /* To give the same size to all text fields */
+    width: 250px;
+    box-sizing: border-box;
+
+    /* To harmonize the look & feel of text field border */
+    box-shadow: 2px 2px 20px #ddd;
+    border-radius: 1em;
+    border: none;
+}
+
+input:focus,
+textarea:focus {
+    /* To give a little highlight on active elements */
+    border-color: #000;
+    border-radius: 1em;
+}
+
+textarea {
+    /* To properly align multiline text fields with their labels */
+    vertical-align: top;
+
+    /* To give enough room to type some text */
+    height: 5em;
+}
+
+.button {
+    /* To position the buttons to the same position of the text fields */
+    padding-left: 90px;
+    /* same size as the label elements */
+}
+
+button {
+    /* This extra margin represent roughly the same space as the space
+     between the labels and their text fields */
+   box-sizing: border-box;
+    padding:.7em;
+    margin-left: 4em;
+    font: bold .6em sans-serif;
+    border: none;
+    border-radius: 10em;
+    background: white;
+    border-radius: 1em;
+   box-shadow: 2px 2px 20px #ddd;
+}
