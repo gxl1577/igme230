@@ -52,6 +52,12 @@ ul, li {
 ul{
     margin-top:0;
     padding-top:0;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+li {
+    flex: 0 0 auto;
 }
 
 a {
