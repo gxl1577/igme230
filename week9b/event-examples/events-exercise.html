@@ -51,10 +51,10 @@
         let legend = document.querySelector("legend"); //legend heading
 
         //loop through radio button for clicks, show text, set value
-        for (let i = 0; i < radioB.length; i++) {
-            radioB[i].onclick = function (e) {
-                info.innerHTML = "You have selected the color " + radioB[i].value;
-                value = radioB[i].value;
+        for (let x of radioB) {
+            x.onclick = function (e) {
+                info.innerHTML = "You have selected the color " + x.value;
+                value = x.value;
             }
         }
 

@@ -65,7 +65,7 @@
         function createList(id, array){
             for (let i = 0; i <= array.length; i++) {
             let listItem = document.createElement("li");
-            listItem.innerHTML = foods[i];
+            listItem.innerHTML = array[i];
             document.getElementById(id).appendChild(listItem);
     }
         }
