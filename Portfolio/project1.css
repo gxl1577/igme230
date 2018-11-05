@@ -1,0 +1,212 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900');
+
+/****************************************************/
+
+/* GENERAL RESET */
+
+/****************************************************/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+article,
+section,
+div,
+footer,
+header,
+nav {
+    display: block;
+}
+
+html {
+    background-color: black;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+body{
+    position:relative;
+}
+/****************************************************/
+
+/* TOP SECTION */
+
+/****************************************************/
+
+nav {
+    max-width: 1200px;
+    margin: auto;
+    padding: 38px;
+}
+
+.logo {
+    width: 175px;
+}
+
+nav a:nth-child(n+2) {
+    font-size: 14px;
+    float: right;
+    margin: 10px;
+    margin-left: 40px;
+}
+
+header {
+    max-width: 1000px;
+    margin: auto;
+    padding: 38px;
+    margin-top: 50px;
+    color: white;
+    font-weight: 900;
+    text-align: center;
+}
+
+#ayee {
+    font-size: 36px;
+}
+
+#visualandmotion {
+    padding-top: 15px;
+    font-size: 170px;
+    line-height: 170px;
+}
+
+/****************************************************/
+
+/* MIDDLE SECTION */
+
+/****************************************************/
+
+section {
+    margin-top: 50px;
+    max-width: 1162px;
+    margin: auto;
+    overflow: hidden;
+    color:white;
+}
+
+.middle {
+    padding: 100px 50px 0px;
+}
+
+.heroimage{
+    max-width:1000px;
+    margin:auto;
+    margin-bottom: 100px;
+}
+
+.intro{
+    max-width:800px;
+    margin:auto;
+    margin-bottom: 100px;
+}
+
+img{
+  width:1000px;
+    margin:auto;
+}
+
+h1{
+    font-weight: 900;
+    font-size: 70px;
+}
+
+h2{
+   font-weight: 900;
+    font-size: 18px;
+    margin:20px 0;
+}
+
+h3{
+   font-weight: 700;
+    font-size: 26px;
+    padding:20px 0;
+}
+
+h4{
+   font-weight: 400;
+    font-size: 16px;
+}
+
+h5{
+   font-weight: 700;
+    font-size: 16px;
+}
+p{
+  font-weight: 100;
+    font-size: 14px;
+    max-width: 500px;
+    margin-bottom: 50px;
+}
+
+li{
+  list-style-type: none;
+}
+
+/****************************************************/
+
+/* BOTTOM SECTION */
+
+/****************************************************/
+
+.abovefooter {
+    position: relative;
+    margin-top: 100px;
+}
+
+.setMeeting {
+    max-width: 500px;
+    margin: 0px 0px 30px 150px;
+}
+
+.backtotop {
+    max-width: 100px;
+    position: absolute;
+    right: 0px;
+    bottom: 50px;
+}
+
+footer {
+    position: absolute;
+    height: 126px;
+    background-color: white;
+    bottom: -200px;
+    left: 0;
+    right:0;
+
+
+}
+
+.foot {
+    margin: auto;
+    max-width: 1200px;
+    padding: 40px;
+
+}
+
+.foot h1 {
+    float: left;
+    font-size: 32px;
+}
+
+.insta,
+.behance,
+.linkedin {
+    width: 33px;
+    float: right;
+    margin-left: 30px;
+
+}
+
+.behance {
+    margin-top: 5px;
+    width: 42px;
+}
