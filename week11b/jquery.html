@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <style>
+        div{
+            height: 100px;
+            width: 100px;
+            background-color: red;
+        }
+    </style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+
+    $("#show").click(function(){
+        $("#panel1").show();
+        $("#panel2").hide();
+    })
+
+     $("#hide").click(function(){
+        $("#panel1").hide();
+         $("#panel2").show();
+    })
+
+
+
+
+
+});
+</script>
+</head>
+<body>
+
+<button id="show">show</button>
+<button id="hide">hide</button>
+<div id="panel1">
+    <h1>hello world</h1>
+    </div>
+
+    <div id="panel2">
+    <h1>hello jsdfhsd</h1>
+    </div>
+
+</body>
+</html>
