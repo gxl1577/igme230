@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>exercise</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            padding: 0;
+            margin: 0;
+            }
+        .container{
+            position: relative;
+            width:100vw;
+            height:100vh;
+            background-color: greenyellow;
+        }
+        .one, .two, .three, .four{
+            position:absolute;
+            background-color: hotpink;
+            width: 100px;
+            height: 100px;
+        }
+        .one{
+            top: 100px;
+            left: 100px;
+        }
+        .two{
+            top: 100px;
+            right: 100px;
+        }
+
+        .three{
+            bottom: 100px;
+            left: 100px;
+        }
+
+        .four{
+            bottom: 100px;
+            right: 100px;
+        }
+    p{
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        font-family: "Impact", Charcoal, sans-serif;
+        }
+
+
+
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <p>HIT ME!</p>
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="three"></div>
+    <div class="four"></div>
+    </div>
+
+    <script>
+          $("p").click(function () {
+            $(".one").slideToggle("slow");
+              $(".two").slideToggle("slow");
+              $(".three").slideToggle("slow");
+              $(".four").slideToggle("slow");
+        });
+
+    </script>
+
+</body>
+
+</html>
