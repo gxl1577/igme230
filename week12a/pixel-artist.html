@@ -114,15 +114,17 @@
 		const cellSize = 25; // specify dimension of cell square in px
 		const numCells = numCols * numRows; // calculate total number of cells
 
+
         // set grid layout
         let pixelGrid = document.querySelector("#pixelGrid");
-		pixelGrid.style.gridTemplateRows = repeat(${numRows}, ${cellSize}px);
-		pixelGrid.style.gridTemplateColumns = repeat(${numCols}, ${cellSize}px);
+		pixelGrid.style.gridTemplateRows = `repeat(${numRows}, ${cellSize}px)`;
+		pixelGrid.style.gridTemplateColumns = `repeat(${numCols}, ${cellSize}px)`;
 
         //Add cells to grid layour
         for (let i = 1; i <= numCells; i++) {
 			$("#pixelGrid").append('<span class="cell"></span>');
 		}
+
 
 		// add value to 'color' from selection box
 		let color = $("#colorChooser").val();
