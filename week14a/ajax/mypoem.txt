@@ -1,0 +1,29 @@
+<p id="verse1">Glory institute of Rochester,<br>
+Cold winter has come closer,<br>
+Freezing the path of walk,<br>
+Making students slip as they talk;<br></p>
+
+<p id="verse2">The weather are unpredictable<br>
+E coli infected salads are unedible,<br>
+Ctrl alt deli access is brisk,<br>
+Yet I can't put my stomach on a risk;</p>
+
+<p id="verse3">Global Village stores,<br>
+so many hidden doors,<br>
+yet no place to park a bike,<br>
+for some reason there's so much hype.</p>
+
+<p id="verse4">O' the new Magic Spell Studio<br>
+the theater inside has such great audio,<br>
+innovation are being created there soon,<br>
+entreprenurs view it as a boon;</p>
+
+<p id="verse5">Getting a new laptop from online,<br>
+looking for a sleek design,<br>
+wow it's so overpriced,<br>
+from my wallet it's legalized heist;</p>
+
+<p id="verse6">Me trying to make poems that just rhymes,<br>
+making bad poems could be a crime,<br>
+A decline in trust,<br>
+Finishing this assignment is a must.</p>
