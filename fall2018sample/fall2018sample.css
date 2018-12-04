@@ -101,7 +101,7 @@ footer {
     list-style-type: none;
     margin: 0;
     border-top: 1px solid white;
-    visibility: hidden;
+    display: none;
 }
 
 .submenu li {
@@ -109,4 +109,4 @@ footer {
     background: #aaaaaa;
 }
 
-.
+
