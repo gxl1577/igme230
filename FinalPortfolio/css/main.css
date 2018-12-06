@@ -1,0 +1,346 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Montserrat:800,900');
+
+/****************************************************/
+
+/* GENERAL RESET */
+
+/****************************************************/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    color: #222;
+}
+
+html {
+    background-color: white;
+}
+
+
+/****************************************************/
+
+/* TOP SECTION */
+
+/****************************************************/
+
+
+/* center section is 535x2+50gap=1120px */
+/* some gridbox goodness */
+body {
+    display: grid;
+    grid-template-columns: 1fr 535px 535px 1fr;
+    grid-template-rows: 120px 500px 600px 775px 300px 300px 130px;
+    grid-gap: 50px;
+    grid-template-areas:
+        ". nav nav ."
+        ". header header ."
+        ". proj1 proj1 ."
+        ". proj2 proj3 ."
+        ". junk junk ."
+        ". abovefooter abovefooter ."
+        "footer footer footer footer";
+}
+
+/* use two flexboxes to adjust the top nav */
+nav {
+    grid-area: nav;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 70px;
+}
+
+.rightnav {
+    width: 160px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* this affects who?? and resume */
+a {
+    text-decoration: none;
+    font-weight: 800;
+}
+a:hover {
+    transform: translateY(1px);
+    color: #aaa;
+}
+
+
+
+
+.logo {
+    width: 175px;
+    filter: drop-shadow(0px 3px 3px #aaa);
+    animation: Kemerge 1s ease-in both;
+}
+
+/*logo emerges from white background when landing*/
+@keyframes Kemerge {
+    from {
+        filter: drop-shadow(0px 0px 0px #fff);
+    }
+
+    to {
+        filter: drop-shadow(0px 3px 3px #aaa);
+    }
+}
+
+
+/*Glowing logo on hover, infinite alternative make it glows back and fourth forever, fiter:drop-shadow is specifically for this svg since box shadow and text shadow won't work*/
+.logo:hover {
+    animation: neonGlow 1s linear infinite alternate;
+}
+
+@keyframes neonGlow {
+    0% {
+        filter: drop-shadow(0px 5px 5px #ff316f);
+    }
+
+    25% {
+        filter: drop-shadow(0px 5px 10px #c430ff);
+    }
+
+    50% {
+        filter: drop-shadow(0px 5px 5px #00ddff);
+    }
+
+    75% {
+        filter: drop-shadow(0px 5px 10px #00ff72);
+    }
+
+    100% {
+        filter: drop-shadow(0px 5px 5px #ffc300);
+    }
+}
+
+
+
+/*Stylizing Ayee! It’s Gan, a designer who specializes in VISUAL & MOTION*/
+header {
+    grid-area: header;
+    font-weight: 900;
+    text-align: center;
+    padding-top: 30px;
+}
+
+#ayee {
+    font-size: 36px;
+    animation: Kopacity 1s ease-in;
+}
+
+#visualandmotion {
+    padding-top: 15px;
+    font-size: 170px;
+    line-height: 170px;
+    animation: Kopacity 1s ease-in .5s both;
+}
+
+/* from none to visible when landing*/
+@keyframes Kopacity {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+/****************************************************/
+
+/* MIDDLE SECTION */
+
+/****************************************************/
+
+
+/*apply grid area*/
+.project1 {
+    grid-area: proj1;
+}
+
+.project2 {
+    grid-area: proj2;
+}
+
+.project3 {
+    grid-area: proj3;
+}
+
+.junk {
+    grid-area: junk;
+}
+
+/*tiles set to relative and tile titles set to absolute*/
+.project1,
+.project2,
+.project3,
+.junk {
+    position: relative;
+}
+
+/*Stylizing tile photos*/
+.project1pic,
+.project2pic,
+.project3pic,
+.junkpic {
+    width: 100%;
+    height: 600px;
+    border-radius: 30px;
+    object-fit: cover;
+    box-shadow: 0 5px 10px #ccc;
+    transition: 1s;
+}
+
+.project2pic,
+.project3pic {
+    height: 775px;
+}
+
+.junkpic {
+    height: 300px;
+}
+
+/*Stylizing tile titles*/
+.project1 h1,
+.project2 h1,
+.project3 h1,
+.junk h1 {
+    font-size: 60px;
+    width: 400px;
+    color: white;
+    position: absolute;
+    z-index: 1;
+    bottom: 20px;
+    left: 40px;
+}
+
+/*this tile has white background, text should turn dark for legibility*/
+.project3 h1 {
+    color: #222;
+}
+
+
+/*tile hover animation, gives dark blue shadow*/
+.project1pic:hover,
+.project2pic:hover,
+.project3pic:hover,
+.junkpic:hover {
+    box-shadow: 0 20px 50px #6d93a8;
+}
+
+
+
+
+
+/****************************************************/
+
+/* BOTTOM SECTION */
+
+/****************************************************/
+
+.abovefooter {
+    grid-area: abovefooter;
+    position: relative;
+}
+
+.setMeeting {
+    max-width: 400px;
+    position: absolute;
+    bottom:0;
+    left:300px;
+    filter: invert(100%);
+}
+
+.backtotop {
+    max-width: 100px;
+    position: absolute;
+    right: 0px;
+    bottom: 50px;
+    filter: invert(100%);
+}
+
+footer {
+    grid-area: footer;
+    background-color: #222;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.foot {
+    width:980px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.foot h1 {
+    color:white;
+}
+
+.socialmedia{
+    width:200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+
+.insta,
+.behance,
+.linkedin {
+    width: 33px;
+    filter: invert(100%);
+}
+
+.behance {
+    width: 45px;
+}
+
+
+/*creative go back to top button*/
+.tassel{
+    width: 20px;
+    position:fixed;
+    right:3vw;
+    top: 0vh;
+    display:none;
+}
+
+.tassel div{
+    position: relative;
+}
+
+.tassel div img{
+    position: absolute;
+    left:7px;
+    top:-5px;
+}
+
+.rope{
+    width: 6px;
+    background-color: #ffa300;
+    position:fixed;
+    right:3vw;
+    top: 0vh;
+    display: none;
+}
+
+
+
+/****************************************************/
+
+/* RESPONSIVE */
+
+/****************************************************/
+
+@media screen and (max-width: 36rem) {
