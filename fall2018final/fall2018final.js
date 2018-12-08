@@ -6,11 +6,10 @@ $(".mainmenu").click(function (){
 
 
         let article = ("article0.txt"); // sets default article element
-        $("form input").val(article); // changes menu option to default
+
         $("article").load(article); // retrieves only default element
 
-        $("form").change(function() {
-            article = $("form input").val();
+        $("form").click(function() {
+            article = $('input[name=content]:checked').val();
             $("article").load(article);
         });
-

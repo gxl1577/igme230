@@ -67,6 +67,7 @@ a {
     text-decoration: none;
     font-weight: 800;
 }
+
 a:hover {
     transform: translateY(1px);
     color: #aaa;
@@ -254,30 +255,23 @@ header {
 .setMeeting {
     max-width: 400px;
     position: absolute;
-    bottom:0;
-    left:300px;
+    bottom: 0;
+    left: 300px;
     filter: invert(100%);
-}
-
-.backtotop {
-    max-width: 100px;
-    position: absolute;
-    right: 0px;
-    bottom: 50px;
-    filter: invert(100%);
+    pointer-events: none;
 }
 
 footer {
     grid-area: footer;
     background-color: #222;
-    display:flex;
+    display: flex;
     align-items: center;
     justify-content: center;
 
 }
 
 .foot {
-    width:980px;
+    width: 980px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -285,15 +279,16 @@ footer {
 
 
 .foot h1 {
-    color:white;
+    color: white;
+    font-size: 32px;
 }
 
-.socialmedia{
-    width:200px;
+.socialmedia {
+    width: 200px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    }
+}
 
 .insta,
 .behance,
@@ -308,33 +303,32 @@ footer {
 
 
 /*creative go back to top button*/
-.tassel{
+.tassel {
     width: 20px;
-    position:fixed;
-    right:3vw;
-    top: 0vh;
-    display:none;
-}
-
-.tassel div{
-    position: relative;
-}
-
-.tassel div img{
-    position: absolute;
-    left:7px;
-    top:-5px;
-}
-
-.rope{
-    width: 6px;
-    background-color: #ffa300;
-    position:fixed;
-    right:3vw;
+    position: fixed;
+    right: 3vw;
     top: 0vh;
     display: none;
 }
 
+.tassel div {
+    position: relative;
+}
+
+.tassel div img {
+    position: absolute;
+    left: 7px;
+    top: -5px;
+}
+
+.rope {
+    width: 6px;
+    background-color: #ffa300;
+    position: fixed;
+    right: 3vw;
+    top: 0vh;
+    display: none;
+}
 
 
 /****************************************************/
@@ -343,4 +337,118 @@ footer {
 
 /****************************************************/
 
-@media screen and (max-width: 36rem) {
+@media only screen and (max-width: 1220px) {
+    body {
+        grid-template-columns: 1fr 44vw 44vw 1fr;
+        grid-template-rows: 10vw 41vw 49vw 63.5vw 24.6vw 24.6vw 10.7vw;
+        grid-gap: 4vw;
+    }
+
+    /* TOP SECTION */
+    nav {
+        padding: 5.7vw;
+    }
+
+    .rightnav {
+        width: 13vw;
+        font-size: 1.15vw;
+    }
+
+    .logo {
+        width: 14.3vw;
+        filter: drop-shadow(0px 1px 1px #aaa);
+    }
+
+    header {
+        padding-top: 2.5vw;
+    }
+
+    #ayee {
+        font-size: 3vw;
+    }
+
+    #visualandmotion {
+        padding-top: 1.2vw;
+        font-size: 14vw;
+        line-height: 14vw;
+    }
+
+    /* MIDDLE SECTION */
+
+    /*Stylizing tile photos*/
+    .project1pic,
+    .project2pic,
+    .project3pic,
+    .junkpic {
+        height: 49vw;
+        border-radius: 2.5vw;
+        box-shadow: 0 5px 10px #ccc;
+    }
+
+    .project2pic,
+    .project3pic {
+        height: 63.5vw;
+    }
+
+    .junkpic {
+        height: 24.6vw;
+    }
+
+    /*Stylizing tile titles*/
+    .project1 h1,
+    .project2 h1,
+    .project3 h1,
+    .junk h1 {
+        font-size: 5vw;
+        width: 32.8vw;
+        bottom: 1.6vw;
+        left: 3vw;
+    }
+
+    /* BOTTOM SECTION */
+
+    .setMeeting {
+        max-width: 32.8vw;
+        left: 24.6vw;
+    }
+
+    .foot h1 {
+        font-size: 2.6vw;
+
+    }
+
+    .foot {
+        width: 88.6vw;
+    }
+
+    .socialmedia {
+        width: 16.4vw;
+    }
+
+    .insta,
+    .behance,
+    .linkedin {
+        width: 2.7vw;
+    }
+
+    .behance {
+        width: 3.7vw;
+    }
+
+
+    /*creative go back to top button*/
+    .tassel {
+        width: 20px;
+        right: 3vw;
+    }
+
+    .tassel div img {
+        left: 7px;
+        top: -5px;
+    }
+
+    .rope {
+        width: 6px;
+        right: 3vw;
+    }
+}
