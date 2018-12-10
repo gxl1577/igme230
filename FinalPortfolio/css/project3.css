@@ -233,6 +233,7 @@ a:hover {
 
 .image7 {
     grid-area: image7;
+	max-width: 100vw;
 }
 
 
