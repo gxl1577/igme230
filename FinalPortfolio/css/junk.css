@@ -1,4 +1,6 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900');
+
 /****************************************************/
 
 /* GENERAL RESET */
@@ -27,36 +29,7 @@ html {
     background-color: white;
 }
 
-/* some gridbox goodness */
-img,
-div,
-h1 {
-    place-self: center;
-}
 
-img:not(.insta):not(.behance):not(.linkedin):not(.logo):not(.tass) {
-    border-radius: 20px;
-    max-width: 70%;
-}
-
-p {
-    width: 500px;
-    font-weight: 500;
-    color: #888;
-}
-
-h1:not(.email) {
-    padding-bottom: 30px;
-}
-
-h2 {
-    padding: 10px 0;
-}
-
-testing{
-    background:red;
-
-}
 /****************************************************/
 
 /* TOP SECTION */
@@ -68,27 +41,13 @@ testing{
 /* some gridbox goodness */
 body {
     display: grid;
-    grid-template-columns: 1fr 1fr 535px 535px 1fr 1fr;
-    grid-template-rows: 120px repeat(14, auto) 130px;
-    grid-row-gap: 200px;
-    grid-column-gap: 20px;
+    grid-template-columns: 1fr 535px 535px 1fr;
+    grid-template-rows: 120px auto 130px;
+    grid-gap: 50px;
     grid-template-areas:
-        ". . nav nav . ."
-        ". heroimage heroimage heroimage heroimage ."
-        ". . bigtitle bigtitle . ."
-        ". . intro intro . ."
-        ". image2 image2 image2 image2 ."
-        ". . problem problem . ."
-        ". image3 image3 image3 image3 ."
-        ". . solution solution . ."
-        ". . ia ia . ."
-        ". image4 image4 image4 image4 ."
-        ". . wireframe wireframe . ."
-        ". image5 image5 image5 image5 ."
-        ". . styleguide styleguide . ."
-        ". image6 image6 image6 image6 ."
-        ". image7 image7 image7 image7 ."
-        "footer  footer footer footer footer footer";
+        ". nav nav ."
+        ". junk junk ."
+        "footer footer footer footer";
 }
 
 /* use two flexboxes to adjust the top nav */
@@ -171,69 +130,13 @@ a:hover {
 
 /****************************************************/
 
-.heroimage {
-    grid-area: heroimage;
+main{
+    grid-area: junk;
 }
 
-.bigtitle {
-    grid-area: bigtitle;
-    font-size: 90px;
-}
-
-/* Somehow this part conflicts with grid layout where it won't center */
-.intro {
-    grid-area: intro;
-    display: flex;
-    justify-content: space-around;
-}
-
-.intro aside {
-    padding-left: 50px;
-}
-
-.image2 {
-    grid-area: image2;
-}
-
-.problem {
-    grid-area: problem;
-}
-
-.image3 {
-    grid-area: image3;
-}
-
-.solution {
-    grid-area: solution;
-}
-
-.ia {
-    grid-area: ia;
-}
-
-.image4 {
-    grid-area: image4;
-}
-
-.wireframe {
-    grid-area: wireframe;
-}
-
-.image5 {
-    grid-area: image5;
-}
-
-.styleguide {
-    grid-area: styleguide;
-}
-
-.image6 {
-    grid-area: image6;
-}
-
-.image7 {
-    grid-area: image7;
-}
+img{
+    max-width: 500px;
+    }
 
 
 
@@ -285,35 +188,7 @@ footer {
     width: 45px;
 }
 
-/*creative go back to top button*/
-.tassel {
-    width: 20px;
-    position: fixed;
-    right: 3vw;
-    top: 0vh;
-    display: none;
-}
 
-.tassel div {
-    position: relative;
-}
-
-/* adjustment to align the tassel with rope */
-.tassel div img {
-    position: absolute;
-    left: 7px;
-    top: -5px;
-    cursor: pointer;
-}
-
-.rope {
-    width: 6px;
-    background-color: #ffa300;
-    position: fixed;
-    right: 3vw;
-    top: 0vh;
-    display: none;
-}
 
 
 
@@ -327,46 +202,10 @@ footer {
 /* Should work for 1280x800, I want my site to break at 1220px, if required I may change 1220 to 1280 */
 @media only screen and (max-width: 1220px) {
     body {
-        grid-template-columns: 1fr 1fr 44vw 44vw 1fr 1fr;
-        grid-template-rows: 10vw repeat(14, auto) 10.7vw;
-        grid-column-gap: 2vw;
+        grid-template-columns: 1fr 44vw 44vw 1fr;
+        grid-template-rows: 10vw auto 10.7vw;
+        grid-gap: 4vw;
     }
-
-    .bigtitle {
-        font-size: 60px;
-    }
-
-    .intro {
-        width: 80%;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-
-    .intro p {
-        width: 400px;
-    }
-
-    .intro aside {
-        padding-top: 40px;
-    }
-
-    p {
-        width: 60vw;
-    }
-
-    h1:not(.email) {
-        padding-bottom: 3vw;
-    }
-
-    h2 {
-        padding: 1vw 0;
-    }
-
-    img:not(.insta):not(.behance):not(.linkedin):not(.logo):not(.tass) {
-        border-radius: 20px;
-        max-width: 90vw;
-    }
-
 
     /* TOP SECTION */
     nav {
@@ -422,57 +261,17 @@ footer {
     .behance {
         width: 3.7vw;
     }
-
-
-    /*creative go back to top button*/
-    .tassel {
-        width: 20px;
-        right: 3vw;
-    }
-
-    .tassel div img {
-        left: 7px;
-        top: -5px;
-    }
-
-    .rope {
-        width: 6px;
-        right: 3vw;
-    }
-
 }
+
 
 /* Should work for 320x 568, I want my site to break at 480px, if required I may change 320 to 480 */
 @media only screen and (max-width: 480px) {
     body {
         grid-template-columns: 1fr 44vw 44vw 1fr;
-        grid-template-rows: 20vw repeat(1, auto) 50vw;
-        grid-column-gap: 4vw;
-        grid-row-gap: 8vw;
-        grid-template-areas:
-            ". nav nav ."
-            ". heroimage heroimage ."
-            ". bigtitle bigtitle ."
-            ". intro intro ."
-            ". image2 image2 ."
-            ". problem problem ."
-            ". image3 image3 ."
-            ". solution solution ."
-            ". ia ia ."
-            ". image4 image4 ."
-            ". wireframe wireframe ."
-            ". image5 image5 ."
-            ". styleguide styleguide ."
-            ". image6 image6 ."
-            ". image7 image7 ."
-            "footer footer footer footer";
+        grid-template-rows: 20vw auto 50vw;
+        grid-gap: 4vw;
     }
 
-    .intro p {
-        width: 70vw;
-        font-weight: 500;
-        color: #888;
-    }
 
     /* TOP SECTION */
     nav {
@@ -493,20 +292,10 @@ footer {
     }
 
     /* MIDDLE SECTION */
-    .bigtitle {
-        font-size: 10vw;
-    }
-
-    .intro aside {
-        padding-left: 0px;
-    }
-
-    .heroimage{
-        height: 600px;
-        object-fit:cover;
+   main img{
+        width: 400px;
 
     }
-
 
     /* BOTTOM SECTION */
 
@@ -536,21 +325,7 @@ footer {
         width: 10vw;
     }
 
-
-    /*creative go back to top button*/
-    .tassel {
-        width: 20px;
-        right: 3vw;
-    }
-
-    .tassel div img {
-        left: 7px;
-        top: -5px;
-    }
-
-    .rope {
-        width: 6px;
-        right: 3vw;
-    }
-
 }
+
+
+

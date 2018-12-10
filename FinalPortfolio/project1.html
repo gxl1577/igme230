@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="en">
-<html>
 
 <head>
     <meta charset="utf-8">
@@ -10,74 +9,132 @@
     <meta name="author" content="Gan Lin">
     <link rel="shortcut icon" href="images/logoFavicon.png" type="image/x-icon">
     <link rel="stylesheet" href="css/project1.css" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:800|Montserrat:400,500,700,800,900" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
 <body>
-    <nav>
-        <a href="index.html"><img class="logo" src="images/logo.svg"></a>
-        <a href="resume.html">R&#201;SUM&#201;</a>
-        <a href="who.html">WHO??</a>
+   <nav>
+        <div class="logoholder">
+            <a href="index.html"><img class="logo" alt= "Logo" src="images/logo.svg"></a>
+        </div>
+        <div class="rightnav">
+            <a href="who.html">WHO??</a>
+            <a href="resume.html">R&#201;SUM&#201;</a>
+        </div>
     </nav>
-    <section class="middle">
-        <img class="heroimage" src="images/CaryMockup.gif">
-        <div class="intro">
-            <h1>CARY REDESIGN</h1>
-            <p>library.rit.edu/cary/ is an online representation of RIT’s
-                Cary Graphic Arts Collection, home to 40,000+ bodies of work- including artist’s books, manuscripts, print arts, illustrations, posters, and type specimens.
 
-                Today, the website is around 10 years old and a redesign is considered to achieve better user experience.
+
+    <img class="heroimage" alt="heroimage" src="images/photo1.jpg">
+    <h1 class="bigtitle">CARY REDESIGN</h1>
+
+    <div class="intro">
+        <p>library.rit.edu/cary/ is an online representation of RIT’s
+            Cary Graphic Arts Collection, home to 40,000+ bodies of work- including artist’s books, manuscripts, print arts, illustrations, posters, and type specimens.
+
+            Today, the website is around 10 years old and a redesign is considered to achieve better user experience.
+        </p>
+        <aside>
+            <div class="introaside">
+                <h2>Duration</h2>
+                <p>10 weeks Spring 2018</p>
+            </div>
+            <div class="introaside">
+                <h2>Role</h2>
+                <p>UI/UX, Visual, Motion</p>
+            </div>
+        </aside>
+    </div>
+
+    <img class="image2" alt="Product Image" src="images/CaryMockup.gif">
+
+    <div class="problem">
+        <h1>Problem</h1>
+        <div class="flex1">
+            <h2>RESPONSIVENESS</h2>
+            <p>Originally designed for 1920 x 1080 screen, no 4k, not mobile friendly
+            </p>
+            <h2>TARGET USERS</h2>
+            <p>Lack of research tools on home page for researchers. Visual design may feel outdated for today’s visitors.
             </p>
         </div>
+        <div class="flex1">
+            <h2>STATIC SITE</h2>
+            <p>There is no motion design on the site. Lack of interactiveness makes it less interesting.
+            </p>
+            <h2>DEAD LINKS</h2>
+            <p>Some links lead users to nowhere</p>
+        </div>
+    </div>
 
-        <img src="images/originalcarysite.jpg">
+    <img class="image3" src="images/originalcarysite.jpg" alt="Original site design">
 
-        <h1>Problem</h1>
-        <h2>RESPONSIVENESS</h2>
-        <p>Originally designed for 1920 x 1080 screen, no 4k, not mobile friendly
-        </p>
-        <h2>TARGET USERS</h2>
-        <p>Lack of research tools on home page for researchers. Visual design may feel outdated for today’s visitors.
-        </p>
-        <h2>STATIC SITE</h2>
-        <p>There is no motion design on the site. Lack of interactiveness makes it less interesting.
-        </p>
-        <h2>DEAD LINKS</h2>
-        <p>Some links lead users to nowhere</p>
+    <div class="solution">
+        <h1>Solution</h1>
+        <div class="flex1">
+            <h2>RESPONSIVENESS</h2>
+            <p>Support 4k and mobile displays
+            </p>
+            <h2>TARGET USERS</h2>
+            <p>A search tool on home page for researchers. An updated design for today’s visitors.
+            </p>
+        </div>
+        <div class="flex1">
+            <h2>DYNAMIC SITE</h2>
+            <p>Implement motion design and interactions to make the site alive
+            </p>
+            <h2>FIX DEAD LINKS</h2>
+            <p>Eliminate unused links to achieve a better user experience
+            </p>
+        </div>
+    </div>
 
-        <h1>SOLUTION</h1>
-        <h2>RESPONSIVENESS</h2>
-        <p>Support 4k and mobile displays
+    <div class="ia">
+        <h1>Information Architecture</h1>
+        <p>I created a flow map of what the redesigned website will look like.</p>
+    </div>
 
-        </p>
-        <h2>TARGET USERS</h2>
-        <p>A search tool on home page for researchers. An updated design for today’s visitors.
-        </p>
-        <h2>DYNAMIC SITE</h2>
-        <p>Implement motion design and interactions to make the site alive
-        </p>
-        <h2>FIX DEAD LINKS</h2>
-        <p>Eliminate unused links to achieve a better user experience
-        </p>
+    <img class="image4" src="images/carysitemap.png" alt="Sitemap">
 
-        <h1>Site Map</h1>
-        <img src="images/carysitemap.png">
-        <img src="images/carywire.jpg">
-        <img src="images/carystyle.jpg">
-        <img src="images/carybegindesktop.gif">
+    <div class="wireframe">
+        <h1>Wireframe</h1>
+        <p>A wireframe is created to visualize what the layout will be like.</p>
+    </div>
+
+    <img class="image5" src="images/carywire.jpg" alt="Wireframe">
+
+      <div class="styleguide">
+        <h1>Styleguide</h1>
+        <p>A styleguide is created to polish the visual design. I choose RIT related colors in addition to fonts that matches Cary's asthetics.</p>
+    </div>
+    <img class="image6" src="images/carystyle.jpg" alt="Styleguide">
 
 
-    </section>
+    <img class="image7" src="images/carybegindesktop.gif" alt="landing gif">
+
+
+
+
 
     <footer>
         <div class="foot">
-            <h1>GXL1577@RIT.EDU</h1>
-            <a href="https://www.instagram.com/ganlin97/"><img class="insta" src="images/insta.svg"></a>
-            <a href="https://www.behance.net/GanLin97"><img class="behance" src="images/behance.svg"></a>
-            <a href="https://www.linkedin.com/in/ganlin97/"><img class="linkedin" src="images/linkedin.svg"></a>
+            <h1 class="email">GXL1577@RIT.EDU</h1>
+            <div class="socialmedia">
+                <a href="https://www.instagram.com/ganlin97/"><img class="insta" alt="Instagram" src="images/insta.svg"></a>
+                <a href="https://www.behance.net/GanLin97"><img class="behance" alt="Behance" src="images/behance.svg"></a>
+                <a href="https://www.linkedin.com/in/ganlin97/"><img class="linkedin" alt="Linkedin" src="images/linkedin.svg"></a>
+            </div>
         </div>
     </footer>
 
+    <div class="tassel">
+        <div><img class="tass" src="images/tassel.svg" alt="Back to Top"></div>
+    </div>
+    <div class="rope"></div>
+
+
+    <script src="javascript/tassel.js">
+    </script>
 
 </body>
 

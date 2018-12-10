@@ -1,5 +1,4 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css?family=Montserrat:800,900');
 
 /****************************************************/
 
@@ -43,6 +42,14 @@ body {
         ". junk junk ."
         ". abovefooter abovefooter ."
         "footer footer footer footer";
+    position: relative;
+}
+
+.documentation{
+    position: absolute;
+    left:50%;
+    top: 60px;
+    background: yellow;
 }
 
 /* use two flexboxes to adjust the top nav */
@@ -54,6 +61,7 @@ nav {
     padding: 70px;
 }
 
+/* who?? and resume container */
 .rightnav {
     width: 160px;
     font-size: 14px;
@@ -72,9 +80,6 @@ a:hover {
     transform: translateY(1px);
     color: #aaa;
 }
-
-
-
 
 .logo {
     width: 175px;
@@ -238,14 +243,12 @@ header {
 }
 
 
-
-
-
 /****************************************************/
 
 /* BOTTOM SECTION */
 
 /****************************************************/
+
 
 .abovefooter {
     grid-area: abovefooter;
@@ -290,6 +293,7 @@ footer {
     align-items: center;
 }
 
+/*original color is black; invert*/
 .insta,
 .behance,
 .linkedin {
@@ -315,10 +319,12 @@ footer {
     position: relative;
 }
 
+/* adjustment to align the tassel with rope */
 .tassel div img {
     position: absolute;
     left: 7px;
     top: -5px;
+    cursor: pointer;
 }
 
 .rope {
@@ -337,6 +343,8 @@ footer {
 
 /****************************************************/
 
+
+/* Should work for 1280x800, I want my site to break at 1220px, if required I may change 1220 to 1280 */
 @media only screen and (max-width: 1220px) {
     body {
         grid-template-columns: 1fr 44vw 44vw 1fr;
@@ -452,3 +460,143 @@ footer {
         right: 3vw;
     }
 }
+
+
+/* Should work for 320x 568, I want my site to break at 480px, if required I may change 320 to 480 */
+@media only screen and (max-width: 480px) {
+    body {
+        grid-template-columns: 1fr 44vw 44vw 1fr;
+        grid-template-rows: 20vw 120vw 150vw 120vw 120vw 50vw 50vw 50vw;
+        grid-gap: 4vw;
+            grid-template-areas:
+        ". nav nav ."
+        ". header header ."
+        ". proj1 proj1 ."
+        ". proj2 proj2 ."
+        ". proj3 proj3 ."
+        ". junk junk ."
+        ". abovefooter abovefooter ."
+        "footer footer footer footer";
+}
+
+
+    /* TOP SECTION */
+    nav {
+        padding: 5.7vw;
+    }
+
+    .rightnav {
+        width: 13vw;
+        height: 8vw;
+        font-size: 3vw;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .logo {
+        width: 40vw;
+        filter: drop-shadow(0px 1px 1px #aaa);
+    }
+
+    header {
+        padding-top: 0vw;
+        text-align: left;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #ayee {
+        font-size:8vw;
+    }
+
+    #visualandmotion {
+        padding-top: 1.2vw;
+        font-size: 18vw;
+        line-height: 18vw;
+    }
+
+    /* MIDDLE SECTION */
+
+    /*Stylizing tile photos*/
+    .project1pic,
+    .project2pic,
+    .project3pic,
+    .junkpic {
+        height: 150vw;
+        border-radius: 2.5vw;
+        box-shadow: 0 5px 10px #ccc;
+    }
+
+    .project2pic,
+    .project3pic {
+        height: 120vw;
+    }
+
+    .junkpic {
+        height: 50vw;
+    }
+
+    /*Stylizing tile titles*/
+    .project1 h1,
+    .project2 h1,
+    .project3 h1,
+    .junk h1 {
+        font-size: 10vw;
+        width: 32.8vw;
+        bottom: 1.6vw;
+        left: 3vw;
+    }
+
+    /* BOTTOM SECTION */
+
+    .setMeeting {
+        max-width: 60vw;
+        left: 10vw;
+    }
+
+    .foot h1 {
+        font-size: 7vw;
+
+    }
+
+    .foot {
+        width: 88.6vw;
+        height: 22vw;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    .socialmedia {
+        width: 40vw;
+    }
+
+    .insta,
+    .behance,
+    .linkedin {
+        width: 7vw;
+    }
+
+    .behance {
+        width: 10vw;
+    }
+
+
+    /*creative go back to top button*/
+    .tassel {
+        width: 20px;
+        right: 3vw;
+    }
+
+    .tassel div img {
+        left: 7px;
+        top: -5px;
+    }
+
+    .rope {
+        width: 6px;
+        right: 3vw;
+    }
+}
+
